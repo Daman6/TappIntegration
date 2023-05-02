@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url "https://nexus.tappp.com/nexus/repository/maven-releases"
+            allowInsecureProtocol = true
+        }
+    }
+}
+rootProject.name = "TappIntegration"
+include ':app'
